@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Components from './Components';
+import Header from './components/Header/Header.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header></Header>
+    <form>
+
+      <input type="email" name="email" placeholder='Your Email' required />
+      <input type="password" name="password" placeholder='Your Password' required />
+      {/* <button type="submit" className='btn' >Login</button> */}
+      <a href='#Components' className='btn' >Login</a>
+    </form>
+    </>
   );
 }
 
